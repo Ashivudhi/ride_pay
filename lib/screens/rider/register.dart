@@ -1,7 +1,3 @@
-//import 'package:fl_uberapp/src/blocs/auth_bloc.dart';
-//import 'package:fl_uberapp/src/resources/dialog/loading_dialog.dart';
-//import 'package:fl_uberapp/src/resources/dialog/msg_dilog.dart';
-//import 'package:fl_uberapp/src/resources/home_page.dart';
 import 'package:flutter/material.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -94,7 +90,7 @@ var authBloc;
                           errorText:
                           snapshot.hasError ? snapshot.error : null,
                           prefixIcon: Container(
-                              width: 50, child: Image.asset("ic_mail.png")),
+                              width: 50),
                           border: OutlineInputBorder(
                               borderSide: BorderSide(
                                   color: Color(0xffCED0D2), width: 1),
@@ -113,7 +109,7 @@ var authBloc;
                         snapshot.hasError ? snapshot.error : null,
                         labelText: "Password",
                         prefixIcon: Container(
-                            width: 50, child: Image.asset("ic_lock.png")),
+                            width: 50),
                         border: OutlineInputBorder(
                             borderSide: BorderSide(
                                 color: Color(0xffCED0D2), width: 1),

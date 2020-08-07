@@ -1,8 +1,6 @@
-//import 'package:fl_uberapp/src/blocs/auth_bloc.dart';
-//import 'package:fl_uberapp/src/resources/dialog/loading_dialog.dart';
-//import 'package:fl_uberapp/src/resources/dialog/msg_dilog.dart';
-//import 'package:fl_uberapp/src/resources/home_page.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/gestures.dart';
+import 'package:ride_pay/screens/driver/log_In.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -94,7 +92,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           errorText:
                           snapshot.hasError ? snapshot.error : null,
                           prefixIcon: Container(
-                              width: 50, child: Image.asset("ic_mail.png")),
+                              width: 50),
                           border: OutlineInputBorder(
                               borderSide: BorderSide(
                                   color: Color(0xffCED0D2), width: 1),
@@ -143,6 +141,13 @@ class _RegisterPageState extends State<RegisterPage> {
                       style: TextStyle(color: Color(0xff606470), fontSize: 16),
                       children: <TextSpan>[
                         TextSpan(
+                            recognizer: TapGestureRecognizer()
+                              ..onTap = () {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => DriverLogin()));
+                              },
                             text: "Login now",
                             style: TextStyle(
                                 color: Color(0xff3277D8), fontSize: 16))

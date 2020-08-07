@@ -55,7 +55,7 @@ class DriverLoginState extends State<DriverLogin> {
               Padding(
                 padding: EdgeInsets.fromLTRB(25.0, 20.0, 25.0, 20.0),
                 child: TextField(
-                  controller: _emailController,
+                  controller: _passController,
                   style: TextStyle(fontSize: 18, color: Colors.blueGrey,
 
                       fontWeight: FontWeight.w700),

@@ -106,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
                                 Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                        builder: (context) => LoginPage()));
+                                        builder: (context) => RegisterPage()));
                               },
                             text: "Sign up for a new account",
                             style: TextStyle(

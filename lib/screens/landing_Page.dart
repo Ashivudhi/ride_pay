@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 
 import 'package:ride_pay/screens/driver/log_In.dart';
 import 'package:ride_pay/screens/rider/log_In.dart';
@@ -21,7 +22,7 @@ class _State extends State<LandingPage>{
           child: ListView(
             children: <Widget>[
               Container(
-                alignment: Alignment.center,
+                alignment: AlignmentDirectional.center,
                 padding: EdgeInsets.fromLTRB(20, 30, 0, 70),
                 child: Text(
                   'Ride Pay',
